@@ -8,6 +8,17 @@ var mainMenu = (function() {
 	function init() {
 		$menuItems.on( 'click', open );
 		$listItems.on( 'click', function( event ) { event.stopPropagation(); } );
+		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
+
+			if ( $('#navbar').is(':visible') ) {
+				$(this).removeClass('active');
+			} else {
+				$(this).addClass('active');
+			}
+
+			event.preventDefault();
+
+		});
 	}
 
 	function open( event ) {
