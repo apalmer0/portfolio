@@ -16,8 +16,8 @@ class Header extends Component {
           <div className="menuextras" />
           <nav id="mainmenu" className="mainmenu navbar navbar-default">
             <div className="navbar-header">
-              <a href="#" className="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-              <a href="index.html"><img className="logo-wrapper" src="img/ap_logo.png" alt="Andrew Palmer portfolio" /></a>
+              <Link to="/" className="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></Link>
+              <Link to="/"><img className="logo-wrapper" src="img/ap_logo.png" alt="Andrew Palmer portfolio" /></Link>
             </div>
             <div id="navbar" className="navbar-collapse collapse">
               <ul className="nav navbar-nav navbar-right">

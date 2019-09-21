@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
@@ -65,12 +66,12 @@ class Home extends Component {
                 </a>
               </div>
               <div className="col-md-6 col-sm-6">
-                <a href="hire.html">
+                <Link to="/hire">
                   <div className="service-wrapper portfolio-item">
                     <img src="img/service-icon/hire.png" alt="Hire" />
                     <h3>Hire</h3>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -83,7 +84,7 @@ class Home extends Component {
                 <div className="calltoaction-wrapper">
                   <h3>Get in touch today!</h3>
                   <div>
-                    <a href="hire.html" className="btn btn-orange">Contact</a>
+                    <Link to="hire" className="btn btn-orange">Contact</Link>
                   </div>
                 </div>
               </div>
