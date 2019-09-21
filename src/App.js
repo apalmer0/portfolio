@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import About from './Pages/About';
 import Hire from './Pages/Hire';
 import Home from './Pages/Home';
+import NotFound from './Pages/NotFound';
 import Skills from './Pages/Skills';
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
         <Route path="/about" component={About} />
         <Route path="/skills" component={Skills} />
         <Route path="/hire" component={Hire} />
+        <Route component={NotFound} />
       </Router>
     );
   }
