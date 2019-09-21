@@ -8,7 +8,7 @@ class About extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header activeTab="about" />
 
         <div className="section section-breadcrumbs">
           <div className="container">

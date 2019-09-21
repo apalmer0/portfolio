@@ -7,7 +7,7 @@ class Skills extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header activeTab="skills" />
 
         <div className="section section-breadcrumbs">
           <div className="container">

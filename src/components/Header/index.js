@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
+import { string } from 'prop-types';
 import { Link } from "react-router-dom";
 
 class Header extends Component {
   render() {
+    const { activeTab } = this.props;
+    const homeActive = activeTab === "home" ? "active" : "";
+    const aboutActive = activeTab === "about" ? "active" : "";
+    const skillsActive = activeTab === "skills" ? "active" : "";
+    const hireActive = activeTab === "hire" ? "active" : "";
+
     return (
       <header role="banner" id="fh5co-header" className="mainmenu-wrapper">
         <div className="container">
@@ -14,10 +21,10 @@ class Header extends Component {
             </div>
             <div id="navbar" className="navbar-collapse collapse">
               <ul className="nav navbar-nav navbar-right">
-                <li className="active"><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/skills">Skills</Link></li>
-                <li><Link to="/hire">Hire</Link></li>
+                <li className={homeActive}><Link to="/">Home</Link></li>
+                <li className={aboutActive}><Link to="/about">About</Link></li>
+                <li className={skillsActive}><Link to="/skills">Skills</Link></li>
+                <li className={hireActive}><Link to="/hire">Hire</Link></li>
               </ul>
             </div>
           </nav>
@@ -25,6 +32,10 @@ class Header extends Component {
       </header>
     )
   }
+}
+
+Header.propTypes = {
+  activeTab: string,
 }
 
 export default Header;

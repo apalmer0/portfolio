@@ -15,7 +15,6 @@ class App extends Component {
         <Route path="/about" component={About} />
         <Route path="/skills" component={Skills} />
         <Route path="/hire" component={Hire} />
-        <Route component={NotFound} />
       </Router>
     );
   }

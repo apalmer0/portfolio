@@ -7,7 +7,7 @@ class Hire extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header activeTab="hire" />
 
         <div className="section section-breadcrumbs">
           <div className="container">

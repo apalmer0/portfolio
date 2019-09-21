@@ -8,7 +8,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header activeTab="home" />
 
         <div className="homepage-slider">
           <div id="sequence">
