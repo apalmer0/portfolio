@@ -4,7 +4,7 @@ import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import Skills from '../../components/Skills'
 
-class Homepage extends Component {
+class Home extends Component {
   render() {
     return (
       <div>
@@ -99,4 +99,4 @@ class Homepage extends Component {
   }
 }
 
-export default Homepage;
+export default Home;
