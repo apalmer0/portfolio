@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 class Header extends Component {
   render() {
@@ -13,10 +14,10 @@ class Header extends Component {
             </div>
             <div id="navbar" className="navbar-collapse collapse">
               <ul className="nav navbar-nav navbar-right">
-                <li className="active"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="hire.html">Hire</a></li>
+                <li className="active"><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/skills">Skills</Link></li>
+                <li><Link to="/hire">Hire</Link></li>
               </ul>
             </div>
           </nav>

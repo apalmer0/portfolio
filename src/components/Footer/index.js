@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 class Footer extends Component {
   render() {
@@ -9,10 +10,10 @@ class Footer extends Component {
             <div className="col-footer col-md-6 col-xs-6">
               <h3>Navigate</h3>
               <ul className="no-list-style footer-navigate-section">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="hire.html">Hire</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/skills">Skills</Link></li>
+                <li><Link to="/hire">Hire</Link></li>
               </ul>
             </div>
             <div className="col-footer col-md-4 col-xs-6">
