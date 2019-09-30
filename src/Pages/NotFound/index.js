@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
+import Hero from '../../components/Hero'
 
 class NotFound extends Component {
   render() {
@@ -10,15 +11,10 @@ class NotFound extends Component {
       <div>
         <Header />
 
-        <div className="section section-breadcrumbs">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12">
-                <h1>Page Not Found...</h1>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Hero
+          name="404"
+          description="Page Not Found"
+        />
 
         <div className="section">
           <div className="container">
