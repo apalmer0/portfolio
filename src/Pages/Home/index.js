@@ -13,7 +13,7 @@ class Home extends Component {
         <Header activeTab="home" />
 
         <Hero
-          image="/img/headshot.png"
+          image="/img/headshot.jpg"
           name="Andrew Palmer"
           description="Builder, Climber, Tinkerer"
         >
