@@ -13,7 +13,6 @@ class Header extends Component {
     return (
       <header role="banner" id="fh5co-header" className="mainmenu-wrapper">
         <div className="container">
-          <div className="menuextras" />
           <nav id="mainmenu" className="mainmenu navbar navbar-default">
             <div className="navbar-header">
               <Link to="/" className="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></Link>
