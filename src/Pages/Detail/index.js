@@ -20,7 +20,9 @@ class Detail extends Component {
   }
 
   render() {
-    const { slug } = this.props.match.params
+    const { params, url } = this.props.match
+    const { slug } = params
+    const source = url.replace(slug, "").replace(/\//g,"")
     const allData = [
       ...projectData,
       ...writingData,
@@ -29,7 +31,7 @@ class Detail extends Component {
 
     return (
       <div>
-        <Header activeTab="writing" />
+        <Header activeTab={source} />
 
         <Hero
           name={detail.title}
