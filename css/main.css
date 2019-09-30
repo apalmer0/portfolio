@@ -1734,17 +1734,6 @@ span.color-red {
   cursor: default;
 }
 /*--------------------------------------------------------------------------
-+	Custom Style for Maps
---------------------------------------------------------------------------*/
-.leaflet-popup-content-wrapper {
-  -webkit-border-radius: 5px;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius: 5px;
-  -moz-background-clip: padding;
-  border-radius: 5px;
-  background-clip: padding-box;
-}
-/*--------------------------------------------------------------------------
 +	Custom Style for Tabs (overrides Bootstrap)
 --------------------------------------------------------------------------*/
 .nav-tabs > li > a {
