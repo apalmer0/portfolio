@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
-import Skills from '../../components/Skills'
+import Hero from '../../components/Hero'
 
 class Hire extends Component {
   render() {
@@ -10,15 +10,10 @@ class Hire extends Component {
       <div>
         <Header activeTab="hire" />
 
-        <div className="section section-breadcrumbs">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6">
-                <h1>Get in touch</h1>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Hero
+          name="Get In Touch"
+          description="Need a project you can be proud of?"
+        />
 
         <div className="section">
           <div className="container">
@@ -41,8 +36,6 @@ class Hire extends Component {
             </div>
           </div>
         </div>
-
-        <Skills />
 
         <Footer />
       </div>

@@ -6,8 +6,8 @@ class Header extends Component {
   render() {
     const { activeTab } = this.props;
     const homeActive = activeTab === "home" ? "active" : "";
-    const aboutActive = activeTab === "about" ? "active" : "";
-    const skillsActive = activeTab === "skills" ? "active" : "";
+    const projectsActive = activeTab === "projects" ? "active" : "";
+    const writingActive = activeTab === "writing" ? "active" : "";
     const hireActive = activeTab === "hire" ? "active" : "";
 
     return (
@@ -22,9 +22,9 @@ class Header extends Component {
             <div id="navbar" className="navbar-collapse collapse">
               <ul className="nav navbar-nav navbar-right">
                 <li className={homeActive}><Link to="/">Home</Link></li>
-                <li className={aboutActive}><Link to="/about">About</Link></li>
-                <li className={skillsActive}><Link to="/skills">Skills</Link></li>
-                <li className={hireActive}><Link to="/hire">Hire</Link></li>
+                <li className={projectsActive}><Link to="/projects">Projects</Link></li>
+                <li className={writingActive}><Link to="/writing">Writing</Link></li>
+                <li className={hireActive}><Link to="/hire">Contact</Link></li>
               </ul>
             </div>
           </nav>
