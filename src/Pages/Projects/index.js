@@ -30,7 +30,7 @@ class Projects extends Component {
 
     return (
       <div>
-        <Header activeTab="Projects" />
+        <Header activeTab="projects" />
 
         <Hero
           name="Projects"

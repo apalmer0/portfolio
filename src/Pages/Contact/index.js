@@ -37,7 +37,7 @@ class Hire extends Component {
     ]
     return (
       <div>
-        <Header activeTab="Contact" />
+        <Header activeTab="contact" />
 
         <Hero
           name="Contact"

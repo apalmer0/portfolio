@@ -30,7 +30,7 @@ class Writing extends Component {
 
     return (
       <div>
-        <Header activeTab="Writing" />
+        <Header activeTab="writing" />
 
         <Hero
           name="Writing"

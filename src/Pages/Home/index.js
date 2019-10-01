@@ -10,7 +10,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Header activeTab="Home" />
+        <Header activeTab="home" />
 
         <Hero
           image="/img/headshot.jpg"
