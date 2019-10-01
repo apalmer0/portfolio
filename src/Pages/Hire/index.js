@@ -8,7 +8,7 @@ class Hire extends Component {
   render() {
     return (
       <div>
-        <Header activeTab="hire" />
+        <Header activeTab="Contact" />
 
         <Hero
           name="Get In Touch"
