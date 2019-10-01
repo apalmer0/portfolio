@@ -38,14 +38,8 @@ class Home extends Component {
             <div style={styles.aboutContent}>
               I'm currently working for The Gnar Company, a web and mobile software development consultancy in Boston, MA.
             </div>
-          </div>
-          <div style={styles.about}>
-            <div style={styles.aboutTitle}>Get in Touch</div>
-            <div style={styles.contactOptions}>
-              <span className="icon-github">Github</span>
-              <span>LinkedIn</span>
-              <span>Email</span>
-              <span>Phone</span>
+            <div style={styles.aboutContent}>
+              Questions? Comments? <Link to="/contact">Get in touch</Link>.
             </div>
           </div>
         </div>
