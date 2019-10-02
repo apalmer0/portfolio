@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import { FaGithub, FaLinkedin, FaPhone } from "react-icons/fa"
 import { MdEmail } from "react-icons/md"
 
-import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import Hero from '../../components/Hero'
 import styles from "./styles"
 
-class Hire extends Component {
+class Contact extends Component {
   render() {
     const iconAttributes = {
       color: '#105da1',
@@ -64,11 +63,9 @@ class Hire extends Component {
             ))}
           </div>
         </div>
-
-        <Footer />
       </div>
     )
   }
 }
 
-export default Hire;
+export default Contact;

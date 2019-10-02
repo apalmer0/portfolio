@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 
-import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import Hero from '../../components/Hero'
 import styles from './styles'
@@ -43,8 +42,6 @@ class Detail extends Component {
         <div style={styles.body}>
           {detail.body}
         </div>
-
-        <Footer />
       </div>
     )
   }
