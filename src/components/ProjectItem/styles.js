@@ -13,7 +13,6 @@ export default {
   },
   image: {
     maxWidth: '200px',
-    maxHeight: '200px',
     verticalAlign: 'top',
   },
   contentContainer: {
