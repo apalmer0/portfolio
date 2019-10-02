@@ -1,4 +1,7 @@
 export default {
+  container: {
+    flexGrow: '1',
+  },
   goBack: {
     color: '#535b60',
     cursor: 'pointer',

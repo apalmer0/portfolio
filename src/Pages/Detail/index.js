@@ -29,7 +29,7 @@ class Detail extends Component {
     const detail = allData.find((data) => slug === data.slug)
 
     return (
-      <div>
+      <div style={styles.container}>
         <Header activeTab={source} />
 
         <Hero

@@ -1,4 +1,7 @@
 export default {
+  container: {
+    flexGrow: '1',
+  },
   aboutContainer: {
     fontFamily: 'Be Vietnam',
     margin: '60px auto',

@@ -8,11 +8,12 @@ import Home from './Pages/Home';
 import NotFound from './Pages/NotFound';
 import Projects from './Pages/Projects';
 import Writing from './Pages/Writing';
+import styles from './styles'
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <div style={styles.container}>
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />

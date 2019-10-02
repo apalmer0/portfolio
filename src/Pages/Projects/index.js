@@ -28,7 +28,7 @@ class Projects extends Component {
     const { pathname } = this.props.location
 
     return (
-      <div>
+      <div style={styles.container}>
         <Header activeTab="projects" />
 
         <Hero

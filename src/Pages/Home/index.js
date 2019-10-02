@@ -8,7 +8,7 @@ import styles from './styles';
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div style={styles.container}>
         <Header activeTab="home" />
 
         <Hero

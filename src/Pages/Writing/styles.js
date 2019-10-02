@@ -1,4 +1,7 @@
 export default {
+  container: {
+    flexGrow: '1',
+  },
   projectsList: {
     display: 'flex',
     width: '60%',

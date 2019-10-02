@@ -35,7 +35,7 @@ class Contact extends Component {
       },
     ]
     return (
-      <div>
+      <div style={styles.container}>
         <Header activeTab="contact" />
 
         <Hero

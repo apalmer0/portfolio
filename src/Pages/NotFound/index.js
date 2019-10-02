@@ -8,7 +8,7 @@ import styles from './styles'
 class NotFound extends Component {
   render() {
     return (
-      <div>
+      <div style={styles.container}>
         <Header />
 
         <Hero
