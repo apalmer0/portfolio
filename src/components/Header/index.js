@@ -2,29 +2,35 @@ import React, { Component } from 'react';
 import { string } from 'prop-types';
 import { Link } from "react-router-dom";
 
+import styles from "./styles"
+
 class Header extends Component {
   render() {
     const { activeTab } = this.props;
-    const homeActive = activeTab === "home" ? "active" : "";
-    const aboutActive = activeTab === "about" ? "active" : "";
-    const skillsActive = activeTab === "skills" ? "active" : "";
-    const hireActive = activeTab === "hire" ? "active" : "";
+    const links = [
+      { url: "/", text: "Home" },
+      { url: "/contact", text: "Contact" },
+    ]
 
     return (
-      <header role="banner" id="fh5co-header" className="mainmenu-wrapper">
-        <div className="container">
-          <div className="menuextras" />
-          <nav id="mainmenu" className="mainmenu navbar navbar-default">
-            <div className="navbar-header">
-              <Link to="/" className="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></Link>
-              <Link to="/"><img className="logo-wrapper" src="img/ap_logo.png" alt="Andrew Palmer portfolio" /></Link>
+      <header role="banner" style={styles.headerContainer}>
+        <div style={styles.contentContainer}>
+          <nav style={styles.navigation}>
+            <div style={styles.navigationHeader}>
+              <Link to="/"><img style={styles.logo} src="/img/ap_logo.png" alt="Andrew Palmer portfolio" /></Link>
             </div>
-            <div id="navbar" className="navbar-collapse collapse">
-              <ul className="nav navbar-nav navbar-right">
-                <li className={homeActive}><Link to="/">Home</Link></li>
-                <li className={aboutActive}><Link to="/about">About</Link></li>
-                <li className={skillsActive}><Link to="/skills">Skills</Link></li>
-                <li className={hireActive}><Link to="/hire">Hire</Link></li>
+            <div style={styles.navigationOptionsContainer}>
+              <ul style={styles.navigationOptions}>
+                {links.map(({ url, text }) => (
+                  <li style={styles.navigationOptionContainer} key={text}>
+                    <Link
+                      style={styles.navigationOption(activeTab === text.toLowerCase())}
+                      to={url}
+                    >
+                      {text}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </nav>
