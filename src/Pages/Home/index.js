@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 import Header from '../../components/Header'
-import SocialLinks from '../../components/SocialLinks'
 import Hero from '../../components/Hero'
 import styles from './styles';
 
@@ -39,9 +38,8 @@ class Home extends Component {
               I'm currently working for The Gnar Company, a web and mobile software development consultancy in Boston, MA.
             </div>
             <div style={styles.aboutContent}>
-              Get in touch.
+              <Link to="/contact">Get in touch</Link>.
             </div>
-            <SocialLinks />
           </div>
         </div>
       </div>

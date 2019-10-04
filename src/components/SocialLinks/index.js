@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FaGithub, FaLinkedin, FaPhone } from "react-icons/fa"
+import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { MdEmail } from "react-icons/md"
 
 import styles from "./styles"
@@ -25,11 +25,6 @@ class SocialLinks extends Component {
         icon: <MdEmail {...iconAttributes} />,
         text: "Email",
         url: "mailto:andrew@andrewpalmer.co",
-      },
-      {
-        icon: <FaPhone {...iconAttributes} />,
-        text: "Phone",
-        url: "tel:617-690-8147",
       },
     ]
     return (
