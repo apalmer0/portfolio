@@ -21,7 +21,7 @@ class Header extends Component {
             <div style={styles.navigationHeader}>
               <Link to="/"><img style={styles.logo} src="/img/ap_logo.png" alt="Andrew Palmer portfolio" /></Link>
             </div>
-            <div style={{ display: 'block' }}>
+            <div style={styles.navigationOptionsContainer}>
               <ul style={styles.navigationOptions}>
                 {links.map(({ url, text }) => (
                   <li style={styles.navigationOptionContainer} key={text}>

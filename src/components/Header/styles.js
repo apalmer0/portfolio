@@ -22,6 +22,9 @@ export default {
     maxWidth: '350px',
     width: '90%',
   },
+  navigationOptionsContainer: {
+    display: 'block',
+  },
   navigationOptions: {
     position: 'relative',
     float: 'right',
