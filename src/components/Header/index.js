@@ -9,8 +9,6 @@ class Header extends Component {
     const { activeTab } = this.props;
     const links = [
       { url: "/", text: "Home" },
-      { url: "/projects", text: "Projects" },
-      { url: "/writing", text: "Writing" },
       { url: "/contact", text: "Contact" },
     ]
 

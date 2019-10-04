@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 import Header from '../../components/Header'
+import SocialLinks from '../../components/SocialLinks'
 import Hero from '../../components/Hero'
 import styles from './styles';
 
@@ -23,7 +24,7 @@ class Home extends Component {
           <div style={styles.about}>
             <div style={styles.aboutTitle}>About Me</div>
             <div style={styles.aboutContent}>
-              I love writing code, solving problems, rock climbing, and building things. I'm happiest when I'm taking on interesting or challenging <Link to="/projects">Projects</Link>, and sometimes I <Link to="/writing">write</Link> about them.
+              I love writing code, rock climbing, solving problems, and building things. I'm happiest when I'm taking on interesting or challenging projects.
             </div>
             <div style={styles.aboutContent}>
               I'm a full-stack developer. My favorite side to work on is whichever side I'm currently working on.
@@ -38,8 +39,9 @@ class Home extends Component {
               I'm currently working for The Gnar Company, a web and mobile software development consultancy in Boston, MA.
             </div>
             <div style={styles.aboutContent}>
-              Questions? Comments? <Link to="/contact">Get in touch</Link>.
+              Get in touch.
             </div>
+            <SocialLinks />
           </div>
         </div>
       </div>

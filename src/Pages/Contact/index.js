@@ -21,7 +21,7 @@ class Contact extends Component {
         <div style={styles.body}>
           <div style={styles.left}>
             <p>
-              Have questions about some of the projects I've worked on? Want to let me know what I got wrong in something I wrote? Got ideas for new projects or articles I should check out?
+              Have questions about some of the projects I've worked on? Got ideas for new projects or articles I should check out?
             </p>
             <p>
               Let me know!
