@@ -4,10 +4,13 @@ import styles from './styles';
 
 class Footer extends Component {
   render() {
+    const today = new Date()
+    const currentYear = today.getFullYear()
+
     return (
       <div style={styles.footer}>
         <div style={styles.copyright}>
-          &copy; 2019 Andrew Palmer.
+        {`© ${currentYear} Andrew Palmer.`}
         </div>
       </div>
     );
