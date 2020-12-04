@@ -1,4 +1,6 @@
-export default {
+import { Styles } from '../../types'
+
+const styles: Styles = {
   projectItem: {
     borderBottom: '1px solid #105BA1',
     cursor: 'pointer',
@@ -22,7 +24,7 @@ export default {
   },
   title: {
     fontSize: '20px',
-    fontWeight: '600',
+    fontWeight: 'bold',
   },
   category: {
     fontSize: '10px',
@@ -31,3 +33,5 @@ export default {
     fontSize: '15px',
   },
 }
+
+export default styles

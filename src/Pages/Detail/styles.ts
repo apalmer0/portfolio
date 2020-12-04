@@ -1,6 +1,10 @@
-export default {
+import { CSSProperties } from 'react'
+
+import { Styles } from '../../types'
+
+const styles: Styles = {
   container: {
-    flexGrow: '1',
+    flexGrow: 1,
   },
   goBack: {
     color: '#535b60',
@@ -25,22 +29,6 @@ export default {
     marginBottom: '10px',
     textDecoration: 'underline',
   },
-  menuOption: (active) => {
-    const baseClass = {
-      cursor: 'pointer',
-      fontSize: '14px',
-      marginBottom: '5px',
-    }
-    const activeClass = {
-      color: '#105da1',
-      fontSize: '18px',
-    }
-
-    return {
-      ...baseClass,
-      ...(active ? activeClass : {}),
-    }
-  },
   body: {
     fontSize: '18px',
     lineHeight: '1.5',
@@ -48,3 +36,5 @@ export default {
     width: '60%',
   },
 }
+
+export default styles

@@ -1,6 +1,8 @@
-export default {
+import { Styles } from '../../types'
+
+const styles: Styles = {
   container: {
-    flexGrow: '1',
+    flexGrow: 1,
   },
   projectsList: {
     display: 'flex',
@@ -20,20 +22,6 @@ export default {
     marginBottom: '10px',
     textDecoration: 'underline',
   },
-  menuOption: (active) => {
-    const baseClass = {
-      cursor: 'pointer',
-      fontSize: '14px',
-      marginBottom: '5px',
-    }
-    const activeClass = {
-      color: '#105da1',
-      fontSize: '18px',
-    }
-
-    return {
-      ...baseClass,
-      ...(active ? activeClass : {}),
-    }
-  },
 }
+
+export default styles

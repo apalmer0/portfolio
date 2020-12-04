@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import { FaGithub, FaLinkedin, FaPhone } from 'react-icons/fa'
-import { MdEmail } from 'react-icons/md'
 
 import Header from '../../components/Header'
 import Hero from '../../components/Hero'

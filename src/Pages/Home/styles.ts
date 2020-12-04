@@ -1,6 +1,8 @@
-export default {
+import { Styles } from '../../types'
+
+const styles: Styles = {
   container: {
-    flexGrow: '1',
+    flexGrow: 1,
   },
   aboutContainer: {
     fontFamily: 'Be Vietnam',
@@ -13,7 +15,7 @@ export default {
   aboutTitle: {
     fontSize: '25px',
     marginBottom: '20px',
-    fontWeight: '600',
+    fontWeight: 'bold',
   },
   aboutContent: {
     fontSize: '18px',
@@ -26,3 +28,5 @@ export default {
     justifyContent: 'space-evenly',
   },
 }
+
+export default styles

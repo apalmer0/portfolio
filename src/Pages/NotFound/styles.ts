@@ -1,6 +1,8 @@
-export default {
+import { Styles } from '../../types'
+
+const styles: Styles = {
   container: {
-    flexGrow: '1',
+    flexGrow: 1,
   },
   body: {
     fontSize: '18px',
@@ -9,3 +11,5 @@ export default {
     width: '60%',
   },
 }
+
+export default styles

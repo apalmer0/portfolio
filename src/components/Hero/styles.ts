@@ -1,9 +1,11 @@
-export default {
+import { Styles } from '../../types'
+
+const styles: Styles = {
   heroContainer: {
     backgroundImage: 'url(../img/page-background.png)',
     fontFamily: 'Be Vietnam',
-    paddingTop: '110px',
     paddingBottom: '40px',
+    paddingTop: '110px',
     textAlign: 'center',
   },
   headshot: {
@@ -18,7 +20,7 @@ export default {
   },
   name: {
     fontSize: '40px',
-    fontWeight: '600',
+    fontWeight: 'bold',
     letterSpacing: '1.5px',
     marginBottom: '30px',
   },
@@ -33,3 +35,5 @@ export default {
     textDecoration: 'none',
   },
 }
+
+export default styles

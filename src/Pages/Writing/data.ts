@@ -1,6 +1,7 @@
 const writingData = [
   {
     category: 'Development',
+    image: '',
     description: "It's an antipattern",
     slug: 'dont-use-index',
     title: "Don't use index",
@@ -8,6 +9,7 @@ const writingData = [
   },
   {
     category: 'Development',
+    image: '',
     description: "When your user isn't your user",
     slug: 'stubbing-stuff',
     title: 'Stubbing stuff',
@@ -15,6 +17,7 @@ const writingData = [
   },
   {
     category: 'Development',
+    image: '',
     description:
       "There's a difference between returning a query and returning a collection",
     slug: 'queries-vs-results',
@@ -24,6 +27,7 @@ const writingData = [
   },
   {
     category: 'Development',
+    image: '',
     description:
       'If you have objects in memory, you might not be getting back what you thought',
     slug: 'careful-with-last',
@@ -32,6 +36,7 @@ const writingData = [
   },
   {
     category: 'Climbing',
+    image: '',
     description: "What's the climbing equivalent of a hole-in-one?",
     slug: 'hole-in-one',
     title: 'Hole in One?',
@@ -39,6 +44,7 @@ const writingData = [
   },
   {
     category: 'Climbing',
+    image: '',
     description: 'Is progression infinite?',
     slug: 'will-people-ever-flash-515a',
     title: 'Will people ever flash 5.15a?',

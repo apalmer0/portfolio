@@ -1,4 +1,6 @@
-export default {
+import { Styles } from '../../types'
+
+const styles: Styles = {
   contact: {
     cursor: 'pointer',
   },
@@ -8,3 +10,5 @@ export default {
     verticalAlign: 'super',
   },
 }
+
+export default styles

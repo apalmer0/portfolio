@@ -1,4 +1,6 @@
-export default {
+import { Styles } from '../../types'
+
+const styles: Styles = {
   headerContainer: {
     backgroundColor: '#FFF',
     borderBottom: '4px solid #105BA1',
@@ -33,23 +35,6 @@ export default {
   navigationOptionContainer: {
     display: 'inline-block',
   },
-  navigationOption: (active) => {
-    const baseClass = {
-      color: '#999',
-      fontSize: '17px',
-      lineHeight: '50px',
-      paddingLeft: '15px',
-      paddingRight: '15px',
-      textDecoration: 'none',
-    }
-    const activeClass = {
-      color: '#105da1',
-      fontWeight: 'bold',
-    }
-
-    return {
-      ...baseClass,
-      ...(active ? activeClass : {}),
-    }
-  },
 }
+
+export default styles
