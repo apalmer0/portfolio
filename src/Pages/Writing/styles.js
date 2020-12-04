@@ -25,15 +25,15 @@ export default {
       cursor: 'pointer',
       fontSize: '14px',
       marginBottom: '5px',
-    };
+    }
     const activeClass = {
       color: '#105da1',
       fontSize: '18px',
-    };
+    }
 
     return {
       ...baseClass,
       ...(active ? activeClass : {}),
-    };
-  }
-};
+    }
+  },
+}

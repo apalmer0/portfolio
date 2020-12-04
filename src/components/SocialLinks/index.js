@@ -1,30 +1,30 @@
-import React, { Component } from 'react';
-import { FaGithub, FaLinkedin } from "react-icons/fa"
-import { MdEmail } from "react-icons/md"
+import React, { Component } from 'react'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { MdEmail } from 'react-icons/md'
 
-import styles from "./styles"
+import styles from './styles'
 
 class SocialLinks extends Component {
   render() {
     const iconAttributes = {
       color: '#105da1',
-      size: "1.5em",
+      size: '1.5em',
     }
     const links = [
       {
         icon: <FaGithub {...iconAttributes} />,
-        text: "Github",
-        url: "https://github.com/apalmer0",
+        text: 'Github',
+        url: 'https://github.com/apalmer0',
       },
       {
         icon: <FaLinkedin {...iconAttributes} />,
-        text: "LinkedIn",
-        url: "https://www.linkedin.com/in/apalmer0/",
+        text: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/apalmer0/',
       },
       {
         icon: <MdEmail {...iconAttributes} />,
-        text: "Email",
-        url: "mailto:andrew@andrewpalmer.co",
+        text: 'Email',
+        url: 'mailto:andrew@andrewpalmer.co',
       },
     ]
     return (
@@ -42,4 +42,4 @@ class SocialLinks extends Component {
   }
 }
 
-export default SocialLinks;
+export default SocialLinks

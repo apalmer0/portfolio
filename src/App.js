@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React, { Component } from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-import Contact from './Pages/Contact';
+import Contact from './Pages/Contact'
 import Footer from './components/Footer'
-import Home from './Pages/Home';
-import NotFound from './Pages/NotFound';
+import Home from './Pages/Home'
+import NotFound from './Pages/NotFound'
 import styles from './styles'
 
 class App extends Component {
@@ -20,8 +20,8 @@ class App extends Component {
         </Router>
         <Footer />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

@@ -14,4 +14,4 @@ export default {
     paddingTop: '10px',
     textAlign: 'left',
   },
-};
+}

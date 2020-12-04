@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
-import { string } from 'prop-types';
-import { Link } from "react-router-dom";
+import React, { Component } from 'react'
+import { string } from 'prop-types'
+import { Link } from 'react-router-dom'
 
-import styles from "./styles"
+import styles from './styles'
 
 class Header extends Component {
   render() {
-    const { activeTab } = this.props;
+    const { activeTab } = this.props
     const links = [
-      { url: "/", text: "Home" },
-      { url: "/contact", text: "Contact" },
+      { url: '/', text: 'Home' },
+      { url: '/contact', text: 'Contact' },
     ]
 
     return (
@@ -17,14 +17,22 @@ class Header extends Component {
         <div style={styles.contentContainer}>
           <nav style={styles.navigation}>
             <div style={styles.navigationHeader}>
-              <Link to="/"><img style={styles.logo} src="/img/ap_logo.png" alt="Andrew Palmer portfolio" /></Link>
+              <Link to="/">
+                <img
+                  style={styles.logo}
+                  src="/img/ap_logo.png"
+                  alt="Andrew Palmer portfolio"
+                />
+              </Link>
             </div>
             <div style={styles.navigationOptionsContainer}>
               <ul style={styles.navigationOptions}>
                 {links.map(({ url, text }) => (
                   <li style={styles.navigationOptionContainer} key={text}>
                     <Link
-                      style={styles.navigationOption(activeTab === text.toLowerCase())}
+                      style={styles.navigationOption(
+                        activeTab === text.toLowerCase(),
+                      )}
                       to={url}
                     >
                       {text}
@@ -44,4 +52,4 @@ Header.propTypes = {
   activeTab: string,
 }
 
-export default Header;
+export default Header

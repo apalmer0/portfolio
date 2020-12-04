@@ -8,4 +8,4 @@ export default {
     margin: '50px auto',
     width: '60%',
   },
-};
+}

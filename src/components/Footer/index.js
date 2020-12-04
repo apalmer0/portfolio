@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-import styles from './styles';
+import styles from './styles'
 
 class Footer extends Component {
   render() {
@@ -9,12 +9,10 @@ class Footer extends Component {
 
     return (
       <div style={styles.footer}>
-        <div style={styles.copyright}>
-        {`© ${currentYear} Andrew Palmer.`}
-        </div>
+        <div style={styles.copyright}>{`© ${currentYear} Andrew Palmer.`}</div>
       </div>
-    );
+    )
   }
 }
 
-export default Footer;
+export default Footer

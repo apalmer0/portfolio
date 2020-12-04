@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import { Link } from "react-router-dom";
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 import Header from '../../components/Header'
 import Hero from '../../components/Hero'
-import projectData from './data';
+import projectData from './data'
 import ProjectItem from '../../components/ProjectItem'
 import styles from './styles'
 
@@ -11,36 +11,36 @@ class Projects extends Component {
   constructor() {
     super()
 
-    this.state = { activeCategory: "All" }
-    this.setTab = this.setTab.bind(this);
+    this.state = { activeCategory: 'All' }
+    this.setTab = this.setTab.bind(this)
   }
 
   setTab(activeCategory) {
-    return () => this.setState({ activeCategory });
+    return () => this.setState({ activeCategory })
   }
 
   render() {
-    const { activeCategory } = this.state;
-    const categories = projectData.map(data => data.category)
-    const uniqueCategories = ["All", ...new Set(categories)]
-    const activeProjects = projectData.filter(({ category }) => category == activeCategory)
-    const displayedProjects = activeCategory === "All" ? projectData : activeProjects
+    const { activeCategory } = this.state
+    const categories = projectData.map((data) => data.category)
+    const uniqueCategories = ['All', ...new Set(categories)]
+    const activeProjects = projectData.filter(
+      ({ category }) => category == activeCategory,
+    )
+    const displayedProjects =
+      activeCategory === 'All' ? projectData : activeProjects
     const { pathname } = this.props.location
 
     return (
       <div style={styles.container}>
         <Header activeTab="projects" />
 
-        <Hero
-          name="Projects"
-          description="I like working towards goals"
-        />
+        <Hero name="Projects" description="I like working towards goals" />
 
         <div style={styles.projectsList}>
           <div style={styles.menuContainer}>
             <div style={styles.menuTitle}>Categories</div>
-            {uniqueCategories.map(category => {
-              const active = activeCategory === category;
+            {uniqueCategories.map((category) => {
+              const active = activeCategory === category
 
               return (
                 <div
@@ -68,4 +68,4 @@ class Projects extends Component {
   }
 }
 
-export default Projects;
+export default Projects

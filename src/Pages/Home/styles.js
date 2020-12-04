@@ -25,4 +25,4 @@ export default {
     marginTop: '30px',
     justifyContent: 'space-evenly',
   },
-};
+}

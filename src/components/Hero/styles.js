@@ -32,4 +32,4 @@ export default {
     fontSize: '25px',
     textDecoration: 'none',
   },
-};
+}

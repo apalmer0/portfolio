@@ -41,15 +41,15 @@ export default {
       paddingLeft: '15px',
       paddingRight: '15px',
       textDecoration: 'none',
-    };
+    }
     const activeClass = {
       color: '#105da1',
       fontWeight: 'bold',
-    };
+    }
 
     return {
       ...baseClass,
       ...(active ? activeClass : {}),
-    };
+    }
   },
 }
