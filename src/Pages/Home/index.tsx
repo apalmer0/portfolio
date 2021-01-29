@@ -33,7 +33,8 @@ const Home: FC = () => (
           side I'm currently working on.
         </div>
         <div style={styles.aboutContent}>
-          I spend most of my development time in Ruby on Rails and React.
+          I spend most of my development time in Ruby on Rails, React, and React
+          Native.
         </div>
         <div style={styles.aboutContent}>
           I prefer slightly overhanging boulders with small holds, and I will do
