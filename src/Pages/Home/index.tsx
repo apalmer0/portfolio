@@ -33,16 +33,18 @@ const Home: FC = () => (
           side I'm currently working on.
         </div>
         <div style={styles.aboutContent}>
-          I spend most of my development time in Ruby on Rails, React, and
-          Redux.
+          I spend most of my development time in Ruby on Rails and React.
         </div>
         <div style={styles.aboutContent}>
           I prefer slightly overhanging boulders with small holds, and I will do
           whatever I can physically manage to keep my feet on the wall.
         </div>
         <div style={styles.aboutContent}>
-          I'm currently working for The Gnar Company, a web and mobile software
-          development consultancy in Boston, MA.
+          I'm currently working for{' '}
+          <a href="https://thegnar.co" target="_blank">
+            The Gnar Company
+          </a>
+          , a web and mobile software development consultancy in Boston, MA.
         </div>
         <div style={styles.aboutContent}>
           <Link to="/contact">Get in touch</Link>.
