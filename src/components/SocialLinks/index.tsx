@@ -22,7 +22,7 @@ const LINKS = [
   {
     icon: <MdEmail {...iconAttributes} />,
     text: 'Email',
-    url: 'mailto:andrew@andrewpalmer.co',
+    url: 'mailto:andrew.palmer.10+portfolio@gmail.com',
   },
 ]
 
