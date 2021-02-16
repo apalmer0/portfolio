@@ -31,6 +31,10 @@ module.exports = {
         use: 'ts-loader',
         exclude: /node_modules/,
       },
+      {
+        test: /\.scss$/i,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
   resolve: {

@@ -3,25 +3,25 @@ import React, { Component } from 'react'
 import Header from '../../components/Header'
 import Hero from '../../components/Hero'
 import SocialLinks from '../../components/SocialLinks'
-import styles from './styles'
+import './Contact.scss'
 
 class Contact extends Component {
   render() {
     return (
-      <div style={styles.container}>
+      <div className="container">
         <Header activeTab="contact" />
 
         <Hero name="Contact" description="Get in touch." />
 
-        <div style={styles.body}>
-          <div style={styles.left}>
+        <div className="body">
+          <div className="left">
             <p>
               Have questions about some of the projects I've worked on? Got
               ideas for new projects or articles I should check out?
             </p>
             <p>Let me know!</p>
           </div>
-          <div style={styles.right}>
+          <div className="right">
             <SocialLinks />
           </div>
         </div>
