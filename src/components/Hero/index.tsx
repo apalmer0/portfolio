@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 
-import styles from './styles'
+import './Hero.scss'
 
 interface Props {
   description: string
@@ -9,14 +9,14 @@ interface Props {
 }
 
 const Hero: FC<Props> = ({ children, description, image, name }) => (
-  <div style={styles.heroContainer}>
-    {image && <img src={image} style={styles.headshot} />}
+  <div className="heroContainer">
+    {image && <img src={image} className="headshot" />}
 
-    <div style={styles.name}>{name}</div>
+    <div className="name">{name}</div>
 
-    <div style={styles.description}>{description}</div>
+    <div className="description">{description}</div>
 
-    {children && <div style={styles.role}>{children}</div>}
+    {children && <div className="children">{children}</div>}
   </div>
 )
 

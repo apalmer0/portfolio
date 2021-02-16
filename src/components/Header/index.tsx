@@ -1,7 +1,7 @@
 import React, { CSSProperties, FC } from 'react'
 import { Link } from 'react-router-dom'
 
-import styles from './styles'
+import './Header.scss'
 
 interface Props {
   activeTab: string
@@ -33,22 +33,27 @@ const navigationOption = (active: boolean): CSSProperties => {
 
 const Header: FC<Props> = ({ activeTab }) => {
   return (
-    <header role="banner" style={styles.headerContainer}>
-      <div style={styles.contentContainer}>
-        <nav style={styles.navigation}>
-          <div style={styles.navigationHeader}>
+    <header role="banner" className="headerContainer">
+      <div className="contentContainer">
+        <nav className="navigation">
+          <div className="navigationHeader">
             <Link to="/">
               <img
-                style={styles.logo}
+                className="logo-mobile"
+                src="/img/ap.png"
+                alt="Andrew Palmer portfolio"
+              />
+              <img
+                className="logo-desktop"
                 src="/img/ap_logo.png"
                 alt="Andrew Palmer portfolio"
               />
             </Link>
           </div>
-          <div style={styles.navigationOptionsContainer}>
-            <ul style={styles.navigationOptions}>
+          <div className="navigationOptionsContainer">
+            <ul className="navigationOptions">
               {LINKS.map(({ url, text }) => (
-                <li style={styles.navigationOptionContainer} key={text}>
+                <li className="navigationOptionContainer" key={text}>
                   <Link
                     style={navigationOption(activeTab === text.toLowerCase())}
                     to={url}
